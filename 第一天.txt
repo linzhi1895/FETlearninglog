@@ -1,0 +1,32 @@
+学习日期：2019年12月5日
+
+用时：2小时
+
+学习目标：
+1、做好开始学习前端的准备。
+2、知道什么是Web?什么是HTML？什么是CSS?什么是Javascript?
+
+学习目标是否达成？
+是
+1、Web是一种建站技术，由前端技术和后端技术组成。
+2、HTML是一种用来描述网页的语言，全称超文本标记语言（Hyper Text Markup Language）。HTML不是编程语言，而是一种标记语言。
+3、CSS是层叠样式表（Cascading Style Sheet）。样式定义如何显示HTML元素。
+4、Javascript是一门完备的动态编程语言，简称JS。当JS应用于HTML文档时，可为网站提供动态交互特性。
+
+收获：
+1、大致了解Web\HTML\CSS\Javascript是什么。
+2、大致了解Web整体架构。
+Web分为前端和后端，前端的主体信息是HTML的内容、展示样式由CSS定义、动态交互由JS控制。
+前端通过HTTP请求和后端联系，后端主体是一个Web Server。
+在Web Server上运行Web Service。Web Service就是一种协议+格式的交流体系，用来返回结果给前端（比如常见的HTML+HTTP）。
+Web Server里面用来处理前端各种请求的代码叫做服务器脚本。各种语言（比如PHP或者Java等等）都可以用来写服务器脚本。
+服务器脚本处理完请求会跟数据库交流生成结果。结果可以是html也可以是其他的代码片段。
+Web Framework也是用写服务器脚本的同一种语言写的，用来处理网站的各种细节。
+
+问题：
+1、框架和脚本的区别？
+2、JS通过什么请求和后端联系？也是HTTP？
+
+Flag：
+一步步学前端
+

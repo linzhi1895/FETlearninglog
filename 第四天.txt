@@ -27,6 +27,9 @@
 属性list-style-image。
 属性list-style-position。
 可以合并在属性list-style中。
+属性start允许从1以外的数字开始计数。
+属性reversed将启动列表计数。
+属性value允许设置列表项指定数值。
 
 验证：
 

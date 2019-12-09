@@ -22,6 +22,11 @@
 属性border-color。可以声明属性值为transparent来达到类似扩大内边距的效果。
 属性border-radius可以用来设置圆角边框。
 
+3、CSS列表
+属性list-style-type。
+属性list-style-image。
+属性list-style-position。
+可以合并在属性list-style中。
 
 验证：
 

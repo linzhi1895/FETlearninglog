@@ -9,7 +9,12 @@
 笔记：
 1、CSS背景
 属性background-color。background-color不能继承，其默认值是transparent。
-属性background-image。
+属性background-image。默认属性值是none。
+属性background-repeat。属性值有repeat\repeat-x\repeat-y\no-repeat\inherit。
+属性background-position。属性值关键字top\bottom\left\right\center，默认是center。使用百分数是中心点对齐，使用长度值是左上角对齐。
+属性background-attachment。属性值默认是scroll,可以设置为fixed。
+属性background-size。属性值可以使用百分数或长度值。特殊属性值为cover和contain。
+
 
 验证：
 

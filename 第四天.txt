@@ -16,6 +16,13 @@
 属性background-size。属性值可以使用百分数或长度值。特殊属性值为cover和contain。
 在background-*属性值使用逗号后，最后面一个属性值处于最底端。多个background-*的多个属性值在同一条声明内，属性值个数少的将循环作用于属性值多的。
 
+2、CSS边框
+属性border-style。
+属性border-width。声明width前必须声明style。
+属性border-color。可以声明属性值为transparent来达到类似扩大内边距的效果。
+属性border-radius可以用来设置圆角边框。
+
+
 验证：
 
 收获：

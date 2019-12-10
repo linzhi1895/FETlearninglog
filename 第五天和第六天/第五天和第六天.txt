@@ -17,3 +17,7 @@
 flex将对象作为弹性伸缩盒显示；inline-flex将对象作为内联级块弹性伸缩盒显示。
 
 3、CSS盒模型
+Content box
+Padding box
+Border box
+Margin box

@@ -5,7 +5,7 @@
 学习目标：
 1、掌握CSS背景、边框、列表和链接属性
 2、掌握CSS稍微复杂的选择器
-3、了解CSS选择器的优先性
+3、了解CSS选择器的优先级
 
 笔记：
 1、CSS背景
@@ -45,6 +45,38 @@ CSS规定子元素从父元素继承属性，但某些早期浏览器并不支�
 
 6、派生选择器
 派生选择器（contextual selectors）允许根据文档的上下文关系来确定某个标签的样式。
+
+7、伪类选择器
+伪类
+:first-child
+:last-child
+:only-child
+:invalid
+:hover
+:focus
+
+伪元素
+::first-line
+::first-letter
+::before
+::after
+
+8、选择器组合
+后代选择器（descendant selector）
+子元素选择器（child combinator）>
+相邻兄弟选择器（adjacent sibling）+
+一般相邻选择器（general sibling）~
+
+9、选择器的优先级
+理解层叠（Cascading）是关键
+规则一：作用于同一标签时，写在后面的声明会覆盖写在前面的声明。
+规则二：使用id选择器的声明要高于使用类选择器的声明，使用类选择器的声明要高于使用元素选择器的声明。
+规则三：子元素从父元素继承样式属性。控制继承可以使用属性值inherit，initial，unset。
+
+计算优先级：
+写在元素
+
+
 
 验证：
 

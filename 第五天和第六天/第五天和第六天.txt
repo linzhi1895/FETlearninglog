@@ -9,7 +9,10 @@
 
 学习笔记：
 1、Block and inline boxes
-属性display,属性值block表示块，属性inline表示内联。
+属性display。属性值block表示块，属性inline表示内联，这是外部展示（outer display）类型值。
 <h1>\<p>等是常见的块元素，<a>\<span>\<em>\<strong>是常见的内联元素。
 
-2、
+2、盒子还有内部展示（inner display）类型值。
+在没有指明的情况下，内部展示类型值是normal flow（与外部展示一致），但可以另外指明为flex。
+
+3、

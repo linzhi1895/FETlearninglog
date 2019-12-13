@@ -21,3 +21,7 @@ Content box
 Padding box
 Border box
 Margin box
+
+4、属性float浮动
+利用属性值left\right和margin属性可以设置两列布局或三列布局。
+清楚浮动使用属性clear,属性值left\right\both分别可以停止任何活动的坐、右、左右浮动。

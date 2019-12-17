@@ -1,0 +1,73 @@
+*{
+	font-family: Arial;
+	font-weight: bold;
+	color: gray;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+body{
+	overflow: hidden;
+	min-width: 1000px;
+}
+
+header{
+	width: 20%;
+	height: 700px;
+	background: #0099cc;
+	float: left;
+	text-align: center;
+}
+
+h1{
+	color: white;
+	padding-top: 1em;
+}
+
+content{
+	width: 80%;
+	min-width: 800px;
+	height:700px;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.biheader h2,.ctheader h2{
+	padding-top: 1em;
+}
+
+.basicinfo, .contact{
+	display: inline-flex;
+	list-style: none;
+}
+
+.basicinfo li, .contact li{
+	margin-right: 50px;
+	padding-top: 1em;
+}
+
+.basicinfo li h4, .contact li h4{
+	margin-right: 10px;
+	display: inline;
+}
+
+.basicinfo li p, .contact li p{
+	display: inline;
+}
+
+.abheader h2,.eduheader h2,.pjheader h2{
+	padding-top: 1em;
+}
+
+.ability, .eduexp, .pjexp{
+	list-style: none;
+}
+
+.ability li,
+.eduexp li,
+.pjexp li
+{
+	padding-top: 1em;
+}

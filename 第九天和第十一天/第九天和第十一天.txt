@@ -128,6 +128,18 @@ font-family按“西文字体在前、中文字体在后”、“效果佳（质
 font-family不区分大小写，但在同一个项目中，同样的Family Name大小写必须统一。
 需要在Windows平台显示的中文内容，其字号应不小于12px。
 需要在Windows平台显示的中文内容，不要使用除normal以外的font-style。其他平台也应慎用。
+font-weight属性必须使用数值方式描述。
+line-height在定义文本段落时，应使用数值。
+使用transition时应指定transition-property。
+尽可能在浏览器能高效实现的属性上添加过渡和动画。
+Media Query不得单独编排，必须与相关的规则一起定义。
+Media Query如果有多个逗号分隔的条件时，应将每个条件放在单独一行中。
+尽可能给出在高分辨率Retina下效果更佳的样式。
+带私有前缀的属性由长到短排列，按冒号位置对齐。
+需要添加hack时应尽可能考虑是否可以采用其他方式解决。
+尽量使用选择器hack处理兼容性，而非属性hack。
+尽量使用简单的属性hack。
+禁止使用Expression。
 
 3、W3C规范
 

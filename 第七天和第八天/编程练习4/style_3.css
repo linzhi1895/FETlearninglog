@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: gray;
+	height: 700px;
+	display: flex;
+}
+
+.leftbox{
+	width: 200px;
+	height: 100%;
+	background: green;
+}
+
+.middlebox{
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+
+.rightbox{
+	width: 200px;
+	height: 100%;
+	background: blue;
+}

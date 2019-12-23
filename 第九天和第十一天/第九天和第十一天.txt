@@ -33,6 +33,44 @@ id、class命名，在避免冲突并描述清楚的前提下尽可能短。
 HTML标签的使用应该遵循标签的语义。
 p-段落。
 h1\h2\h3\h4\h5\h6-层级标题。
+strong\em-强调。
+ins-插入。
+del-删除。
+abbr-缩写。
+code-代码标识。
+cite-引用来源作品的标题。
+q-引用。
+blockquote-一段或长篇引用。
+ul-无序列表。
+ol-有序列表。
+dl\dt\dd-定义列表。
+在CSS可以实现相同需求的情况下不得使用表格进行布局。
+标签的使用应尽量简洁，减少不必要的标签。
+属性名必须使用小写字母。
+属性值必须用双引号包围。
+布尔类型的属性，建议不添加属性值。
+自定义属性建议以 xxx- 为前缀，推荐使用data- 。
+使用HTML的doctype来启用标准模式，建议使用大写的DOCTYPE。
+启用IE Edge模式。<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+在html标签上设置正确的lang属性。<html lang="zh-CN">
+页面必须使用精简形式，明确指定字符编码。指定字符编码的meta必须是head的第一个直接子元素。
+HTML文件使用无BOM的UTF-8编码。
+引入css时必须指明rel="stylesheet"。
+引入css和JavaScript时无需指明type属性。
+展现定义放置于外部css中，行为定义放置于外部JavaScript中。
+在head中引入页面所需要的所有CSS资源。
+JavaScript应当放在页面末尾，或采用异步加载。
+移动环境或只针对现代浏览器设计的Web应用，如果引用外部资源的URL协议部分与页面相同，建议省略协议前缀。
+页面必须包含title标签声明标题。
+title必须作为head的直接子元素，并紧随charset声明之后。
+保证favicon可访问。1、在Web Server根目录放置favicon.ico文件。2、使用link指定favicon。<link rel="shortcut icon" href="path/to/favicon.ico">
+若页面欲对移动设备友好，需指定页面的viewport。
+禁止img的src取值为空。延迟加载的图片也要增加默认的src。
+避免为img添加不必要的title属性。
+为重要图片添加alt属性。
+添加width和height属性，以避免页面抖动。
+有下载需求的图片采用img标签实现，无下载需求的图片采用CSS背景图实现。
+
 
 
 3、W3C规范

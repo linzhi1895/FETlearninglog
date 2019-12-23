@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: gray;
+	height:700px;
+}
+
+.rightbox{
+	width: 200px;
+	height: 100%;
+	float: right;
+	background: blue;
+}

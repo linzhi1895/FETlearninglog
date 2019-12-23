@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: gray;
+	height: 700px;
+	display: flex;
+}
+
+.leftbox{
+	width: 30%;
+	height: 100%;
+	background: green;
+}
+
+.rightbox{
+	width: 70%;
+	height: 100%;
+	background: blue;	
+}

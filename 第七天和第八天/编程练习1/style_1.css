@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: gray;
+	height: 700px;
+}
+
+.leftbox{
+	width: 30%;
+	height: 100%;
+	background: green;
+	float: left;
+}
+
+.rightbox{
+	width: 70%;
+	height: 100%;
+	background: blue;
+	float: right;
+}

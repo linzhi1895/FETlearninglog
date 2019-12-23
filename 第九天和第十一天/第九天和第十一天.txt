@@ -144,5 +144,21 @@ Media Query如果有多个逗号分隔的条件时，应将每个条件放在单
 3、W3C规范
 
 问题：
+1、元素form和input不熟悉，当input的type设置为password时，value不显示？
+解决：把value属性换成placeholder。
+type?
+name?
+value?
+palceholder?
+
+2、input的type设置为submit时，按钮大小小于type设置为text or password？
+解决：设置submit的box-sizing形式为border-box。
+
+3、从ps切不带蒙版的背景图后，如何在网页显示蒙版？
+在section末尾添加蒙版div，设置透明度，然后使用负边距覆盖到背景图。（此方法难以计算负）
+
+4、字符间距使用什么改变？
+
+
 
 收获：

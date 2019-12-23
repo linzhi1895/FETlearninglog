@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 1200px;
+	margin: auto;
+}
+
+header{
+	background-color: #333333;
+	margin: auto;
+}
+
+header div{
+	width: 960px;
+	height: 80px;
+	margin: auto;
+	line-height: 32px;
+}
+
+.logo{
+	color: white;
+	float: left;
+	margin-top: 24px;
+}
+
+.navbar{
+	list-style: none;
+	display: flex;
+	float: right;
+}
+
+.navbar li{
+	margin-right: 10px;
+}
+
+.navbar li a{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar li a:hover{
+	color: gray;
+}
+
+.navbar li a:active{
+	color: white;
+}
+
+.bannerbox{
+	width: 100%;
+	height: 320px;
+	background-color: #99cc00;
+	position: relative;
+}
+
+.bannernav{
+	list-style: none;
+	position: absolute;
+	right: 110px;
+	bottom: 10px;
+}
+
+.bannernav1,
+.bannernav3,
+.bannernav4{
+	display: inline-block;
+	margin-right: 5px;
+	border: solid 1px black;
+	padding: 2px 5px;
+	background-color: white;
+}
+
+.bannernav2{
+	display: inline-block;
+	margin-right: 5px;
+	border: solid 1px black;
+	padding: 12px 5px 2px 5px;
+	background-color: white;
+}
+
+.mainnav{
+	width: 100%;
+	height: 80px;
+	margin: auto;
+	margin-bottom: 10px;
+	border-bottom: solid 1px gray;
+	position: relative;
+}
+
+.mainnavbox{
+	position: absolute;
+	bottom: 10px;
+	left: 110px;
+}
+
+.mainnavbox a{
+	padding: 10px;
+	border: solid 1px gray;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+	text-decoration: none;
+	color: black;
+}
+
+.mainnavbox a:hover,
+.mainnavbox a:focus{
+	background-color: white;
+	color: gray;
+}
+
+.mainnavbox a:active{
+	background-color: gray;
+	color: black;
+}
+
+.mainnavbox a:visited{
+	background-color: white;
+	color: gray;
+	border-bottom: white;
+}
+
+.ctdiv{
+	width: 980px;
+	margin: auto;
+}
+
+.ctdiv1,
+.ctdiv2,
+.ctdiv3,
+.ctdiv8,
+.ctdiv9,
+.ctdiv10{
+	border: solid 1px gray;
+	width: 314.6px;
+	height: 192px;
+	margin: 0 10px 10px 0;
+	float: left;
+	text-align: center;
+	line-height: 16px;
+}
+
+.ctdiv1 p,
+.ctdiv2 p,
+.ctdiv3 p,
+.ctdiv4 p,
+.ctdiv5 p,
+.ctdiv6 p,
+.ctdiv7 p,
+.ctdiv8 p,
+.ctdiv9 p,
+.ctdiv10 p{
+	margin-top: 88px;
+}
+
+.ctdiv4,
+.ctdiv5,
+.ctdiv6,
+.ctdiv7{
+	border: solid 1px gray;
+	width: 233px;
+	height: 192px;
+	margin: 0 10px 10px 0;
+	float: left;
+	text-align: center;
+	line-height: 16px;
+}
+
+section::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer{
+	width: 100%;
+	height: 120px;
+	background: gray;
+	margin: auto;
+	text-align: center;
+}
+
+footer p{
+	color: white;
+	padding-top: 10px;
+}

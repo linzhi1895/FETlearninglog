@@ -70,8 +70,16 @@ title必须作为head的直接子元素，并紧随charset声明之后。
 为重要图片添加alt属性。
 添加width和height属性，以避免页面抖动。
 有下载需求的图片采用img标签实现，无下载需求的图片采用CSS背景图实现。
-
-
+有文本标题的控件必须使用label标签将其与标题关联。
+<label><input type="checkbox" name="confirm" value="on">我已确认上述条款</label>
+<label for="username">用户名：</label><input type="textbox" name="username" id="username">
+使用button元素时必须指明type属性值。
+尽量不要使用按钮类元素的name属性。
+负责主要功能的按钮在DOM中的顺序应靠前。
+当使用JavaScript进行表单提交时，如果条件允许，应使原生提交功能正常工作。
+针对移动设备开发的页面时，根据内容类型指定输入框的type属性。
+当在现代浏览器中使用audio以及video标签来播放音频、视频时，应当注意格式。
+在支持HTML5的现代浏览器中优先使用audio和video标签来定义音频视频元素。
 
 3、W3C规范
 

@@ -178,5 +178,8 @@ class="content5"这一段代码中，父div元素的margin属性会被中间空�
 9、留言板中使用input元素只能输入单行？
 原因和解决：改用textarea元素。
 
+10、源代码上传到GitHub之后，预览中图片丢失？
+原因和解决：打包图片上传至images文件夹，该文件夹与html和cssw文件同级，并将源码中图片src全部换成images/xxx.png。
+
 
 收获：

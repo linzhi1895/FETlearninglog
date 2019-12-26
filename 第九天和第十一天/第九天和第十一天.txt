@@ -141,7 +141,30 @@ Media Query如果有多个逗号分隔的条件时，应将每个条件放在单
 尽量使用简单的属性hack。
 禁止使用Expression。
 
-3、W3C规范
+3、W3C 可视化格式排版模型
+理解visual formatting model就是深入理解用户代理如何可视化文档树。visual formatting由以下几个因素控制：
+box dimensions and type
+positioning scheme（normal flow，float，and absolute positioning）
+relationships between elements in the document tree
+external information(e.g., viewport size, intrinsic dimensions of images, etc.)
+可视化格式排版模型也不能确定所有的渲染因素，例如letter-spacing算法。用户代理不同会导致许多渲染结果的不同。
+
+Each box is given a position with respect to its containing block, but it is not confined by this containing block; it may ovwrflow.
+
+A box's type affects, in part, its behavior in the visual formatting model.
+
+Each block-level element generates a principal block-level box that contains descendant boxes and generated content and is also the box involved in any positioning scheme.
+
+block-level box和block container box不完全一样。
+
+anonymous block boxes
+<div>
+    Some text
+    <p>More text</p>
+</div>
+there is an anonymous block box around "Some text".
+if a block container box has block-level box inside it, the we force it to have only block-level boxes inside it.
+
 
 问题：
 1、元素form和input不熟悉，当input的type设置为password时，value不显示？

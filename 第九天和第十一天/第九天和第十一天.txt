@@ -158,7 +158,20 @@ palceholder?
 在section末尾添加蒙版div，设置透明度，然后使用负边距覆盖到背景图。（此方法难以计算负）
 
 4、字符间距使用什么改变？
+属性letter-spacing
 
+5、选择器的分类
++
+>
+[]
 
+6、继承性问题
+class="content5"这一段代码中，父div元素的margin属性会被中间空白的子div元素继承导致无法对齐？
+在子div元素中重新声明margin: 0；
+
+7、在class="personmask"这一段代码中，section的子元素div中的img无法对齐？
+子元素img继承父元素div的display属性，为img添加属性display: block;
+
+8、
 
 收获：

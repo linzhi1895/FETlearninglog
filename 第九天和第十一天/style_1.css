@@ -15,7 +15,7 @@ body {
 	width: 100%;
 	height: 990px;
 	text-align: center;
-	background-image: url(https://github.com/linzhi1895/FETlearninglog/blob/master/%E7%AC%AC%E4%B9%9D%E5%A4%A9%E5%92%8C%E7%AC%AC%E5%8D%81%E4%B8%80%E5%A4%A9/images/content1_01.png);
+	background-image: url(images/content1_01.png);
 }
 
 .content1 h1 {
@@ -120,12 +120,13 @@ body {
 	font-weight: 900;
 }
 
-.content2 h1 {
+.content2 h2 {
 	margin: auto;
 	width: 450px;
 	padding: 20px 0 80px 0;
 	
-	line-height: 32px;
+	font-size: 30px;
+	line-height: 30px;
 	font-weight: 900;
 }
 
@@ -163,10 +164,10 @@ body {
 	position: relative;
 	width: 1600px;
 	height: 800px;
-	background-image: url(/images/content3_01.png);
+	background-image: url(images/content3_01.png);
 }
 
-.content3 h1{
+.content3 h2{
 	position: absolute;
 	top: 200px;
 	left: 310px;
@@ -284,7 +285,7 @@ body {
 	text-align: center;
 }
 
-.content4 h1 {
+.content4 h2 {
 	margin: 100px 0;
 	font-size: 30px;
 	line-height: 30px;
@@ -361,7 +362,7 @@ body {
 	text-align: center;
 }
 
-.content6 h1 {
+.content6 h2 {
 	margin: 100px 0 20px 0;
 	font-size: 30px;
 	line-height: 30px;

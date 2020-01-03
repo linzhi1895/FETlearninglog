@@ -6,7 +6,9 @@ JavaScript能够通过改变display来显示/隐藏HTML元素
 
 2、HTML是一种标记语言，CSS是一种样式规则语言，JavaScript是一种脚本语言。
 
-3、应用程序接口（Application Programming Interfaces (API)）是已经建好的一套代码组件，可以让开发者实现原本很难甚至无法实现的程序。就像现成的家具套价之于家居建设，用一些已经切好的木板组装一个书柜，显然比自己设计，寻找合适的木材，裁切至合适的尺寸和形状，找到正确的螺钉，再组装成书柜要简单得多。API分为：3rd party APIs和Browser APIs。
+3、应用程序接口（Application Programming Interfaces (API)）是已经建好的一套代码组件，可以让开发者实现原本很难甚至无法实现的程序。
+就像现成的家具套价之于家居建设，用一些已经切好的木板组装一个书柜，显然比自己设计，寻找合适的木材，裁切至合适的尺寸和形状，找到正确的螺钉，
+再组装成书柜要简单得多。API分为：3rd party APIs和Browser APIs。
 
 浏览器API内建于web浏览器中，它们可以将数据从周边计算机环境筛选出来，还可以做实用的复杂工作。例如：
 文档对象模型（DOM(Document Object Model)API）
@@ -19,7 +21,8 @@ HTMLMediaElement和WebRTC等影音类API
 4、JavaScript通常会从上往下的顺序执行代码。
 
 5、解释（interpret）和编译（compile）
-当JavaScript源代码被执行时，它会被编译成一种更快，二进制的格式，这将使其运行速度尽可能地快。尽管如此，JavaScript仍然被认为是一种解释性语言，因为编译是在代码运行中而非之前发生的。
+当JavaScript源代码被执行时，它会被编译成一种更快，二进制的格式，这将使其运行速度尽可能地快。
+尽管如此，JavaScript仍然被认为是一种解释性语言，因为编译是在代码运行中而非之前发生的。
 
 6、内部JavaScript放在<script></script>标签中
 
@@ -32,3 +35,6 @@ document.addEventListener("DOMContentLoaded", function(){
 ...
 });
 “外部”示例中使用了JavaScript的一项现代技术（async“异步”属性）来解决这一问题，它告知浏览器在遇到<script>元素时不要中断后续HTML加载。
+另外，添加defer属性的脚本将按照在页面中出现的顺序加载。
+如果脚本无需等待页面解析，且无依赖独立运行，那么应使用async。
+如果脚本需要等待解析，且依赖于其它脚本，调用这些脚本时应使用defer，将关联的脚本按所需顺序置于HTML中。

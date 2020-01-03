@@ -14,4 +14,21 @@ JavaScript能够通过改变display来显示/隐藏HTML元素
 画布（Canvas）和WebGL API
 HTMLMediaElement和WebRTC等影音类API
 
+第三方API并没有默认嵌入浏览器中，一般要从网上取得它们的代码和信息。
 
+4、JavaScript通常会从上往下的顺序执行代码。
+
+5、解释（interpret）和编译（compile）
+当JavaScript源代码被执行时，它会被编译成一种更快，二进制的格式，这将使其运行速度尽可能地快。尽管如此，JavaScript仍然被认为是一种解释性语言，因为编译是在代码运行中而非之前发生的。
+
+6、内部JavaScript放在<script></script>标签中
+
+7、外部JavaScript形式为<script src="#.js" async></script>
+
+8、脚本调用策略
+如果JavaScript加载于欲操作的HTML元素之前，代码将出错。需要使用一些结构来避免错误发生。
+“内部”示例使用了以下结构：
+document.addEventListener("DOMContentLoaded", function(){
+...
+});
+“外部”示例中使用了JavaScript的一项现代技术（async“异步”属性）来解决这一问题，它告知浏览器在遇到<script>元素时不要中断后续HTML加载。

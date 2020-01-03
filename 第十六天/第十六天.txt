@@ -38,3 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){
 另外，添加defer属性的脚本将按照在页面中出现的顺序加载。
 如果脚本无需等待页面解析，且无依赖独立运行，那么应使用async。
 如果脚本需要等待解析，且依赖于其它脚本，调用这些脚本时应使用defer，将关联的脚本按所需顺序置于HTML中。
+
+9、JavaScript和ECMAScript的区别
+通过阅读ECMAScript规范，你将学会如何创建脚本语言。
+通过阅读JavaScript文档，你将学习如何使用脚本语言。

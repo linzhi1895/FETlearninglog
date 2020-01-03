@@ -1,1 +1,17 @@
-1
+1、JavaS  cript简介
+JavaScript可以通过getElementById()的方法来改变HTML内容
+JavaScript能够改变HTML属性
+JavaScript能够改变HTML样式（CSS）
+JavaScript能够通过改变display来显示/隐藏HTML元素
+
+2、HTML是一种标记语言，CSS是一种样式规则语言，JavaScript是一种脚本语言。
+
+3、应用程序接口（Application Programming Interfaces (API)）是已经建好的一套代码组件，可以让开发者实现原本很难甚至无法实现的程序。就像现成的家具套价之于家居建设，用一些已经切好的木板组装一个书柜，显然比自己设计，寻找合适的木材，裁切至合适的尺寸和形状，找到正确的螺钉，再组装成书柜要简单得多。API分为：3rd party APIs和Browser APIs。
+
+浏览器API内建于web浏览器中，它们可以将数据从周边计算机环境筛选出来，还可以做实用的复杂工作。例如：
+文档对象模型（DOM(Document Object Model)API）
+地理位置API（Geolocation API）
+画布（Canvas）和WebGL API
+HTMLMediaElement和WebRTC等影音类API
+
+

@@ -1,4 +1,4 @@
-1、JavaS  cript简介
+1、JavaScript简介
 JavaScript可以通过getElementById()的方法来改变HTML内容
 JavaScript能够改变HTML属性
 JavaScript能够改变HTML样式（CSS）

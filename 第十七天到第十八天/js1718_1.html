@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IFE ECMAScript</title>
+</head>
+<body>
+	<input id="first-number" type="number" value="0" placeholder="第一个数字">
+	<input id="second-number" type="number" value="0" placeholder="第二个数字">
+	<button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+    	var num1=document.getElementById("first-number");
+    	var num2=document.getElementById("second-number");
+
+    	var addbtn=document.getElementById("add-btn");
+    	var minusbtn=document.getElementById("minus-btn");
+    	var timesbtn=document.getElementById("times-btn");
+    	var dividebtn=document.getElementById("divide-btn");
+    	var result=document.getElementById("result");
+    	
+    	addbtn.onclick = function() {
+    		result.innerHTML="结果是:"+(Number(num1.value)+Number(num2.value));
+    	};
+
+    	minusbtn.onclick = function() {
+    		result.innerHTML="结果是:"+(Number(num1.value)-Number(num2.value));
+    	};
+
+    	timesbtn.onclick = function() {
+    		result.innerHTML="结果是:"+(Number(num1.value)*Number(num2.value));
+    	};
+
+    	dividebtn.onclick = function() {
+    		if (Number(num2.value)==0) {
+    			console.log(document.innerHTML="除数不能为0，请重新输入");
+    		}else{
+    			result.innerHTML="结果是:"+(Number(num1.value)/Number(num2.value));
+    		};//此处是否应该有冒号
+    	};
+    	//问题1：字符串拼接
+    	//问题2：全局变量声明时，要把num1、num2初始化为对象，直接赋值为值，后续计算都为0
+    </script>
+</body>
+</html>
+

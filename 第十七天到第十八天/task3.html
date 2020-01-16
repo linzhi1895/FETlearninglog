@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<head>
+	<title>V的简历</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="task3.css">
+</head>
+
+<body>
+	<h1>简历</h1>
+  <p id="hi">姓名: <span>Vi</span><button id="sayhi-btn">向我打招呼</button></p>
+	<p>Email: <span class="contactinfo">linzhi@gmail.com</span></p>
+  <p id="hobby"><button id="hobby-btn">查看我的爱好</button></p>   
+	<div>
+		<p>项目经验</p>
+    <ul>
+      <li><a href="https://baike.baidu.com/item/%E8%A5%BF%E6%B8%B8%E8%AE%B0/5723#viewPageContent" target="_blank">西游记</a>：是中国古代第一部浪漫主义章回体长篇神魔小说。</li>
+      <li><a href="https://baike.baidu.com/item/%E7%BA%A2%E6%A5%BC%E6%A2%A6/15311" target="_blank">红楼梦</a>：又名《石头记》等，被列为中国古典四大名著之首，一般认为是清代作家曹雪芹所著。</li>
+      <li><a href="https://baike.baidu.com/item/%E6%B0%B4%E6%B5%92%E4%BC%A0/348" target="_blank">水浒传</a>：是一部以北宋末年宋江起义为主要故事背景、类型上属于英雄传奇的章回体长篇小说。</li>
+      <li><a href="https://baike.baidu.com/item/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/5782" target="_blank">三国演义</a>：是元末明初的小说家罗贯中创作的长篇章回体历史演义小说。</li>
+    </ul>
+ </div>
+ <p id="welcome"></p>
+ <script type="text/javascript">
+    document.getElementById("sayhi-btn").onclick = function() {
+      document.getElementById("hi").innerHTML = "Vi, nice to meet u！";
+    }
+
+    document.getElementById("hobby-btn").onclick = function() {
+      document.getElementById("hobby").innerHTML = "篮球、篮球、篮球";
+    }
+
+    var today = new Date();
+    var num = today.getHours();
+    if (num < 9) {
+      document.getElementById("welcome").innerHTML = "早上好!";
+    }else if (num > 12 && num < 14) {
+      document.getElementById("welcome").innerHTML = "中午好!";
+    }else if (num > 18) {
+      document.getElementById("welcome").innerHTML = "晚上好!";
+    }else {
+      document.getElementById("welcome").innerHTML = "你好!";
+    }
+    console.log(document.innerHTML=today.getHours());
+//今天最后一个练习，在你的简历中，实现一个，当用户访问页面的时候，根据当前时间，在页面中输出不同的问候语。
+//比如早上的时候，输出早上好，晚上的时候是晚上好。
+ </script>
+
+</body>

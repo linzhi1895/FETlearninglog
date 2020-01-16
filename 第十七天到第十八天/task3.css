@@ -1,0 +1,61 @@
+body{
+  background: radial-gradient(white, skyblue);
+}
+*{
+  text-align: center;
+}
+h1 {
+  color: gray;
+  text-shadow: 4px 4px 5px yellow;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575893994335&di=89cdbf1410a13f88271bc1acfe9c32a1&imgtype=0&src=http%3A%2F%2Fpic.16pic.com%2F00%2F47%2F09%2F16pic_4709049_b.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid gray;
+}
+p {
+  font-weight: bold;  
+  font-size: 1em;
+  background-color: skyblue;
+  border-style: dotted;
+  border-color: gray;
+  border-width: 1px;
+}
+span{
+  font-family: Times;
+  text-decoration: underline;
+}
+.contactinfo{
+  font-style: italic;
+}
+ul{
+  text-indent: 50em;
+  line-height: 2em;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575893730298&di=0f5fe9b61b9de44dc45e63cc07930a01&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fb10313ef3f2503e5125a04830d83b44e56a1ef7815bceb-4byCEA_fw658');
+  border: 2px solid gray;
+  border-top-right-radius: 10% 30%;
+  border-top-left-radius: 10% 30%;
+}
+ul li{
+  text-align: left;
+  list-style : square inside;
+}
+a{
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:link, a:visited, a:focus{
+  color: gray;
+}
+a:hover{
+  background:white
+}
+a:active{
+  color: white;
+  background: black;
+}
+
+#welcome {
+  border: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <div id="wrapper">
+        <div id="news-top" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                    <li><span>CSS</span><a href="">Some Link3</a></li>
+                    <li><span>JS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>
+        <div id="news-normal" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>HTML</span><a href="">Some Link2</a></li>
+                    <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                    <li><span>CSS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>      
+    </div>
+    <script>
+    function getAllListItem() {
+        var a = document.getElementsByTagName("li"); 
+        for (var i = 0; i < a.length; i++) {
+        	console.log(a[i]);
+        }
+    }
+    getAllListItem();
+
+    function findAllHtmlSpanInOneSection(sectionId) {
+        var b = document.getElementById(sectionId);
+        var c = b.getElementsByTagName("span");
+        for (var i = 0; i < c.length; i++) {
+            if(c[i].innerHTML == "HTML") {
+                console.log(c[i]);
+            }
+        };
+
+    }
+    findAllHtmlSpanInOneSection("news-normal");
+
+    function findListItem(sectionId, spanCont) {
+        var d = document.getElementById(sectionId);
+        var e = d.getElementsByTagName("span");
+        for (var i = 0; i < e.length; i++) {
+            if (e[i].innerHTML == spanCont) {
+                console.log(e[i].parentNode);
+            }
+        };
+    }
+    findListItem("news-top", "JS");
+
+    function getActiveLinkContent(sectionId) {
+        var f = document.getElementById(sectionId);
+        var g = f.getElementsByTagName("a");
+        for (var i = 0; i < g.length; i++) {
+            if (g[i].className == "active") {//class错误，className正确
+        		console.log(g[i].innerHTML);
+        	}
+        }
+    }
+    getActiveLinkContent("news-top");
+    </script>
+</body>
+</html>

@@ -82,6 +82,19 @@ obj.setAttribute("href", "css2.css");
 12、
 
 
+setTimeout()方法用于在指定的毫秒数后调用函数或计算表达式
+语法：setTimeout(code,millisec)，其中code为要调用的函数后要执行的JavaScript代码串，millisec为在执行代码前需要等待的毫秒数
+setTimeout()只执行code一次，多次调用可以使用setInterval()或者在code中再次调用setTimeout()方法
+循环执行setTimeout()方法，一个循环的时间稍稍多余设定时间，因为执行其他代码块仍然需要时间，可以使用条件代码使循环执行的setTimeout（）方法停下来
+可以使用clearTimeout()指定timeoutID停止某一循环setTimeout()方法
+重复setTimeout()循环计时会加快计时速度
+
+setInterval()方法可以按照指定的周期（以毫秒计）来调用函数或计算表达式
+setInterval()方法会不停的调用函数，直到clearInterval()被调用或者窗口被关闭
+语法：setInterval(code,millisec[,"lang"])，其中code是要调用的函数或要执行的代码串，millisec是周期性执行或调用code之间的时间间隔，以毫秒计
+clearInterval()方法可与i取消对code的周期性执行
+
+
 
 
 

@@ -94,6 +94,8 @@ setInterval()方法会不停的调用函数，直到clearInterval()被调用或�
 语法：setInterval(code,millisec[,"lang"])，其中code是要调用的函数或要执行的代码串，millisec是周期性执行或调用code之间的时间间隔，以毫秒计
 clearInterval()方法可与i取消对code的周期性执行
 
+给定时器调用传递参数，无论是window.setTimeout还是window.setInterval，在使用函数名作为调用句柄时都不能带参数
+
 
 
 

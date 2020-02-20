@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>04</title>
+</head>
+<body>
+	<div id="fade-obj" style="width:300px;height:300px;background:#000;"></div>
+    <button id="fade-btn">淡出</button>
+</body>
+<script type="text/javascript">
+	var div1 = document.querySelectorAll("div")[0];
+	var btn1 = document.querySelectorAll("button")[0];
+	var id1;
+	var id2;
+	var a = 1;
+    var b = 0.01;
+
+	btn1.onclick = function(){
+		if (btn1.innerHTML == "淡出") {
+			btn1.innerHTML = "正在淡出";
+		    btn1.disabled = true;//disabled
+   		    fade();}
+   		else if (btn1.innerHTML == "淡入") {
+   			btn1.innerHTML = "正在淡入";
+   			btn1.disabled = true;
+   			comein();}
+	};
+
+	function fade(){
+		if (a >= 0) {
+		    div1.style.opacity = a;
+		    id1 = setTimeout("fade()",40);
+		    a = a - b;}
+		else{
+		    clearTimeout(id1);
+			btn1.innerHTML = "淡入";
+		    btn1.disabled = false;
+		    }
+	}
+
+	function comein(){
+		if (a < 1) {
+		    div1.style.opacity = a;
+		    id2 = setTimeout("comein()",40);
+		    a = a + b;}
+		else{
+		    clearTimeout(id2);
+			btn1.innerHTML = "淡出";
+		    btn1.disabled = false;
+		    }
+	}
+</script>
+
+<script type="text/javascript">
+/* 	var div1 = document.querySelectorAll("div")[0];//为什么getElementById不行
+	var btn1 = document.querySelectorAll("button")[0];
+	var id1;
+	var id2;
+	var a = 1;
+
+	btn1.onclick = function(){
+		if (btn1.innerHTML == "淡出") {
+			btn1.innerHTML = "正在淡出";
+		    btn1.disabled = true;//disabled
+		    id1 = window.setInterval("fade()",40);
+		}else if (btn1.innerHTML == "淡入") {
+			btn1.innerHTML = "正在淡入";
+		    btn1.disabled = true;//disabled
+		    id2 = window.setInterval("comein()",40);
+		}
+
+	}
+
+	function fade(){
+		if (a >= 0) {
+		        var b = 0.01;
+		        div1.style.opacity = a;//加style,bakcgroundColor要写成驼峰，backgroundColor里面的alpha值怎么单独设置
+		        a = a - b;}
+		    else{
+		    	clearInterval(id1);
+			    btn1.innerHTML = "淡入";
+		        btn1.disabled = false;
+		}
+	}
+
+	function comein(){
+		if (a < 1) {
+		        var b = 0.01;
+		        div1.style.opacity = a;//加style,bakcgroundColor要写成驼峰，backgroundColor里面的alpha值怎么单独设置
+		        a = a + b;}
+		    else{
+		    	clearInterval(id2);
+			    btn1.innerHTML = "淡出";
+		        btn1.disabled = false;
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Sprite</title>
+</head>
+<body>
+	<div></div>
+</body>
+<script type="text/javascript">
+	var div1 = document.querySelectorAll("div")[0];
+	div1.style.width = "480px";
+	div1.style.height = "480px";
+	div1.style.backgroundImage = "url('p/erik_ce204002.jpg')";
+	div1.style.backgroundRepeat = "no-repeat";
+	var id;
+	
+	function smile(){
+		id = setInterval("moveimage()",100);
+	}
+	var a = 480;
+	
+	function moveimage(){
+		if (a == -7680) {
+			a = 480;
+		}else{
+			a = a - 480;
+		    var b = null;
+		    b = "0% " + a +"px";
+		    div1.style.backgroundPosition = b;    
+		}	
+	}
+	
+	smile();
+</script>
+</html>
